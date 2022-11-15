@@ -1,0 +1,61 @@
+4- New note
+
+title Post on https://studies.cs.helsinki.fi/exampleapp/new_note
+
+browser->server:HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+note over server:
+server redirects to https://studies.cs.helsinki.fi/exampleapp/notes
+end note
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: data.json
+browser->server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+server-->browser: favicon.ico
+
+note over browser:
+browser starts displaying JSON data 
+end note
+
+################################################################################################################################################################
+
+5- Visit on SPA at https://studies.cs.helsinki.fi/exempleapp/spa
+
+title Visit on SPA at https://studies.cs.helsinki.fi/exempleapp/spa
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: spa.js
+browser->server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+server-->browser: favicon.ico
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: data.json
+browser->server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+server-->browser: favicon.ico
+
+################################################################################################################################################################
+
+6- New note on SPA
+title Post on SPA at https://studies.cs.helsinki.fi/exempleapp/new_note_spa
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server-->browser: HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server-->browser: spa.js
+browser->server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+server-->browser: favicon.ico
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: data.json
+browser->server: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+server-->browser: favicon.ico
+browser->server:HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
